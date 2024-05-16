@@ -1,5 +1,6 @@
-function capitalize(string) {
-  return 'String';
-}
+import capitalize from './capitalize';
 
-export default capitalize;
+console.log(capitalize('cat'));
+console.log(capitalize('bird'));
+console.log(capitalize('fish'));
+console.log(capitalize('dog'));
