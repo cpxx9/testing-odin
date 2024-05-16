@@ -1,6 +1,6 @@
 const calculator = {
-  add() {
-    return 2;
+  add(x, y) {
+    return x + y;
   },
 };
 
