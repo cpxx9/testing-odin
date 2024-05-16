@@ -1,4 +1,4 @@
-import capitalize from './capitalize';
+import capitalize from './modules/capitalize';
 
 console.log(capitalize('cat'));
 console.log(capitalize('bird'));
