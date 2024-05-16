@@ -1,6 +1,4 @@
 import capitalize from './modules/capitalize';
+import reverseString from './modules/reverseString';
 
-console.log(capitalize('string'));
-console.log(capitalize('cat'));
-console.log(capitalize('fish'));
-console.log(capitalize('dog'));
+console.log(reverseString('books'));
