@@ -4,7 +4,7 @@
   "description": "Linked lists project for TOP",
   "main": "index.js",
   "scripts": {
-    "test": "jest --watch --verbose ./src/JS/*.js",
+    "test": "jest --watch --verbose",
     "dev": "nodemon --exec babel-node src/index.js",
     "build": "babel src -d build",
     "start": "node build/index.js"
