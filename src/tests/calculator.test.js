@@ -30,10 +30,20 @@ describe('subtraction method tests', () => {
 
 describe('multiplication method tests', () => {
   test('calculate 7 * 3 = 21', () => {
-    expect(calculator.mul(7, 3)).toBeCloseTo(21);
+    expect(calculator.mul(7, 3)).toBe(21);
   });
 
   test('calculate 7 * 4 = 28', () => {
-    expect(calculator.mul(7, 4)).toBeCloseTo(28);
+    expect(calculator.mul(7, 4)).toBe(28);
+  });
+});
+
+describe('division method tests', () => {
+  test('calculate 9 / 3 = 3', () => {
+    expect(calculator.div(9, 3)).toBe(3);
+  });
+
+  test('calculate 21 / 3 = 7', () => {
+    expect(calculator.div(21, 3)).toBe(7);
   });
 });

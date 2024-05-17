@@ -8,6 +8,9 @@ const calculator = {
   mul(x, y) {
     return x * y;
   },
+  div(x, y) {
+    return x / y;
+  },
 };
 
 export default calculator;
