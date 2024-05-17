@@ -1,6 +1,10 @@
 function caesarCipher(string) {
   const stringArr = Array.from(string);
-  return stringArr[0] + 1;
+  let newString = '';
+  stringArr.forEach((char, index) => {
+    newString += String.fromCharCode(char.charCodeAt() + 1);
+  });
+  return newString;
 }
 
 export default caesarCipher;

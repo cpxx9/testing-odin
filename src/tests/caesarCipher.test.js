@@ -5,5 +5,9 @@ test('Change cole to dpmf', () => {
 });
 
 test('Change hotdog to ipueph', () => {
-  expect(caesarCipher('ipueph')).toBe('ipueph');
+  expect(caesarCipher('hotdog')).toBe('ipueph');
+});
+
+test('Work with key other than 1', () => {
+  expect(caesarCipher('fun', 2)).toBe('hwp');
 });
