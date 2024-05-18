@@ -7,8 +7,13 @@ function caesarCipher(string, key = 1) {
       (char.charCodeAt() > 64 && char.charCodeAt() < 91) ||
       (char.charCodeAt() > 96 && char.charCodeAt() < 123)
     ) {
-      shiftKey = (char.charCodeAt() - 'a'.charCodeAt + 1) % 26;
-      newString += String.fromCharCode(char.charCodeAt() + shiftKey);
+      if (char === 'z') {
+        newString += 'a';
+      } else if (char === 'Z') {
+        newString += 'A';
+      } else {
+        newString += String.fromCharCode(char.charCodeAt() + shiftKey);
+      }
     } else {
       newString += char;
     }

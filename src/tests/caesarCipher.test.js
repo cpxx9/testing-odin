@@ -19,3 +19,7 @@ test('Work with punctuation', () => {
 test('Work z wrapping to a', () => {
   expect(caesarCipher('pizza', 1)).toBe('qjaab');
 });
+
+test('Work with case', () => {
+  expect(caesarCipher('Pizza Is Good', 1)).toBe('Qjaab Jt Hppe');
+});
